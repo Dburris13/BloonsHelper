@@ -1,0 +1,112 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "1bb835284fb20d5e7e892dce1101a261",
+    "entities": [
+      {
+        "tableName": "monkey_base",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `monkey_name` TEXT, `monkey_class` TEXT, `monkey_range` INTEGER NOT NULL, `monkey_pierce` INTEGER NOT NULL, `monkey_damage` INTEGER NOT NULL, `monkey_camo_detect` INTEGER NOT NULL, `monkey_lead_pierce` INTEGER NOT NULL, `monkey_footprint` INTEGER NOT NULL, `monkey_hotkey` INTEGER NOT NULL, `monkey_special_ability` TEXT, `monkey_art` TEXT, `monkey_icon` TEXT, `monkey_sell_amount` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monkeyName",
+            "columnName": "monkey_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monkeyClass",
+            "columnName": "monkey_class",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monkeyRange",
+            "columnName": "monkey_range",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monkeyPierce",
+            "columnName": "monkey_pierce",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monkeyDamage",
+            "columnName": "monkey_damage",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monkeyCamoDetect",
+            "columnName": "monkey_camo_detect",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monkeyLeadPierce",
+            "columnName": "monkey_lead_pierce",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monkeyFootprint",
+            "columnName": "monkey_footprint",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monkeyHotkey",
+            "columnName": "monkey_hotkey",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monkeySpecialAbility",
+            "columnName": "monkey_special_ability",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monkeyArt",
+            "columnName": "monkey_art",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monkeyIcon",
+            "columnName": "monkey_icon",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monkeySellAmount",
+            "columnName": "monkey_sell_amount",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1bb835284fb20d5e7e892dce1101a261')"
+    ]
+  }
+}
