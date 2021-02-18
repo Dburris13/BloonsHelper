@@ -27,6 +27,13 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fragment_close_enter
+anim fragment_close_exit
+anim fragment_fade_enter
+anim fragment_fade_exit
+anim fragment_fast_out_extra_slow_in
+anim fragment_open_enter
+anim fragment_open_exit
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
@@ -1589,11 +1596,13 @@ drawable notify_panel_notification_icon_bg
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable white_background
 id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
+id FragmentContainer
 id META
 id NO_DEBUG
 id SHIFT
@@ -1743,6 +1752,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fMonkeyName
 id fade
 id fill
 id fill_horizontal
@@ -1752,8 +1762,12 @@ id fitToContents
 id fixed
 id flip
 id floating
+id fmainRecyclerView
 id forever
-id frameLayout
+id fragmentMonkeyIcon
+id fragmentMonkeyIconCardView
+id fragmentScrollView
+id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -1795,8 +1809,9 @@ id message
 id middle
 id mini
 id monekyIconCardView
+id monkeyColumnHeader
+id monkeyColumnInfo
 id monkeyIcon
-id monkeyRecyclerView
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -1917,6 +1932,7 @@ id stretch
 id submenuarrow
 id submit_area
 id tabMode
+id tableLayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -1966,6 +1982,7 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id visible_removing_fragment_view_tag
 id withText
 id withinBounds
 id wrap
@@ -2048,8 +2065,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_monkey
-layout layout_monkey_item
+layout layout_monkey_details
+layout layout_monkey_picture
+layout monkey_detail_fragment
+layout monkey_list_fragment
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2945,6 +2964,8 @@ styleable FlowLayout itemSpacing lineSpacing
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
+styleable Fragment android_name android_id android_tag
+styleable FragmentContainerView android_name android_tag
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
 styleable ImageFilterView altSrc brightness contrast crossfade overlay round roundPercent saturation warmth

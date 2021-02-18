@@ -1,6 +1,7 @@
 package com.example.bloonshelper.room;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.example.bloonshelper.data.Monkey;
 
@@ -26,7 +27,8 @@ public abstract class MonkeyDatabase extends RoomDatabase {
                             context.getApplicationContext(),
                             MonkeyDatabase.class,
                             DATABASE_NAME
-                    ).allowMainThreadQueries().build();
+                    ).createFromAsset("monkeys_db.db").allowMainThreadQueries().build();
+                    Log.d(TAG, "getDatabase: Creating Database from Asset. Instance: " + instance.isOpen());
                 }
             }
         }

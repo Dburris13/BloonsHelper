@@ -1,3 +1,7 @@
+com/example/bloonshelper/adapters/MonkeyArtViewHolder.java
+ com.example.bloonshelper.adapters.MonkeyArtViewHolder
+com/example/bloonshelper/fragments/MonkeyDetailFragment.java
+ com.example.bloonshelper.fragments.MonkeyDetailFragment
 com/example/bloonshelper/room/MonkeyDao.java
  com.example.bloonshelper.room.MonkeyDao
 com/example/bloonshelper/data/MonkeyCost.java
@@ -10,25 +14,28 @@ com/example/bloonshelper/room/MonkeyDatabase.java
  com.example.bloonshelper.room.MonkeyDatabase$1$1
 com/example/bloonshelper/activity/MonkeyListActivity.java
  com.example.bloonshelper.activity.MonkeyListActivity
- com.example.bloonshelper.activity.MonkeyListActivity$1
 com/example/bloonshelper/room/AppExecutors.java
  com.example.bloonshelper.room.AppExecutors
  com.example.bloonshelper.room.AppExecutors$1
  com.example.bloonshelper.room.AppExecutors$MainThreadExecutor
 com/example/bloonshelper/room/MonkeyRepository.java
  com.example.bloonshelper.room.MonkeyRepository
+com/example/bloonshelper/viewmodel/MonkeyFragmentListViewModel.java
+ com.example.bloonshelper.viewmodel.MonkeyFragmentListViewModel
+com/example/bloonshelper/fragments/MonkeyListFragment.java
+ com.example.bloonshelper.fragments.MonkeyListFragment
 com/example/bloonshelper/adapters/MonkeyRecyclerAdapter.java
  com.example.bloonshelper.adapters.MonkeyRecyclerAdapter
- com.example.bloonshelper.adapters.MonkeyRecyclerAdapter$MonkeyViewHolder
 com/example/bloonshelper/data/MonkeyUpgrade.java
  com.example.bloonshelper.data.MonkeyUpgrade
  com.example.bloonshelper.data.MonkeyUpgrade$Tier
-com/example/bloonshelper/MonkeyFragment.java
- com.example.bloonshelper.MonkeyFragment
- com.example.bloonshelper.MonkeyFragment$1
+com/example/bloonshelper/adapters/OnMonkeyListener.java
+ com.example.bloonshelper.adapters.OnMonkeyListener
 com/example/bloonshelper/data/MonkeysData.java
  com.example.bloonshelper.data.MonkeysData
 com/example/bloonshelper/viewmodel/MonkeyListViewModel.java
  com.example.bloonshelper.viewmodel.MonkeyListViewModel
 com/example/bloonshelper/BuildConfig.java
  com.example.bloonshelper.BuildConfig
+com/example/bloonshelper/viewmodel/MonkeyDetailViewModel.java
+ com.example.bloonshelper.viewmodel.MonkeyDetailViewModel
