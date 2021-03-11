@@ -2,6 +2,7 @@ package com.example.bloonshelper.activity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
@@ -73,7 +74,7 @@ public class MonkeyListActivity extends AppCompatActivity implements OnMonkeyLis
     }
 
     @Override
-    public void onMonkeyClick(int position) {
+    public void onMonkeyClick(int position, ImageView sharedImageView) {
         Log.d(TAG, "MonkeylistActivity onMonkeyClick: ");
 //        Bundle bundle = new Bundle();
 //        bundle.putString("monkey_name", mMonkeyRecyclerAdapter.getSelectedMonkey(position).getMonkeyName());

@@ -1,7 +1,6 @@
 package com.example.bloonshelper.adapters;
 
 import android.graphics.Color;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -11,6 +10,7 @@ import com.example.bloonshelper.data.Monkey;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class MonkeyArtViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -39,13 +39,13 @@ public class MonkeyArtViewHolder extends RecyclerView.ViewHolder implements View
     public void onBind(Monkey monkey) {
         if (monkey != null) {
             monkeyName = monkey.getMonkeyName();
-            Log.d(TAG, "onBind: Monkey Art is: " + monkey.getMonkeyArt());
             requestManager.load("file:///android_asset/" + monkey.getMonkeyArt()).into(monkeyArt);
+            ViewCompat.setTransitionName(monkeyArt, monkey.getMonkeyName());
             switch(monkey.getMonkeyClass()) {
-                case "PRIMARY": monkeyCardView.setCardBackgroundColor(Color.parseColor("#6ed7f7")); break;
-                case "MILITARY": monkeyCardView.setCardBackgroundColor(Color.parseColor("#a2f1b1")); break;
-                case "MAGIC": monkeyCardView.setCardBackgroundColor(Color.parseColor("#ebabfc")); break;
-                case "SUPPORT": monkeyCardView.setCardBackgroundColor(Color.parseColor("#f3de95")); break;
+                case "PRIMARY": monkeyCardView.setCardBackgroundColor(Color.parseColor("#77bedc")); break;
+                case "MILITARY": monkeyCardView.setCardBackgroundColor(Color.parseColor("#92fa7a")); break;
+                case "MAGIC": monkeyCardView.setCardBackgroundColor(Color.parseColor("#ba8df3")); break;
+                case "SUPPORT": monkeyCardView.setCardBackgroundColor(Color.parseColor("#f2d297")); break;
                 case "HERO": monkeyCardView.setCardBackgroundColor(Color.BLACK); break;
                 default: monkeyCardView.setCardBackgroundColor(Color.WHITE); break;
             }
@@ -54,7 +54,6 @@ public class MonkeyArtViewHolder extends RecyclerView.ViewHolder implements View
 
     @Override
     public void onClick(View view) {
-        onMonkeyListener.onMonkeyClick(getAdapterPosition());
-        Log.d(TAG, "onClick: Monkey Name:" + monkeyName);
+        onMonkeyListener.onMonkeyClick(getAdapterPosition(), monkeyArt);
     }
 }

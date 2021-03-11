@@ -4,17 +4,18 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
-import com.bumptech.glide.request.RequestOptions;
 import com.example.bloonshelper.R;
 import com.example.bloonshelper.adapters.MonkeyRecyclerAdapter;
 import com.example.bloonshelper.adapters.OnMonkeyListener;
+import com.example.bloonshelper.singleton.GlideSingleton;
 import com.example.bloonshelper.viewmodel.MonkeyFragmentListViewModel;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.view.ViewCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -25,6 +26,7 @@ public class MonkeyListFragment extends Fragment implements OnMonkeyListener {
     private MonkeyFragmentListViewModel mViewModel;
     private RecyclerView mMonkeyRecyclerView;
     private MonkeyRecyclerAdapter mMonkeyRecyclerAdapter;
+    private GlideSingleton glideSingleton;
 
     public static MonkeyListFragment newInstance() {
         return new MonkeyListFragment();
@@ -55,14 +57,7 @@ public class MonkeyListFragment extends Fragment implements OnMonkeyListener {
     }
 
     private RequestManager initGlide(){
-
-        RequestOptions options = new RequestOptions()
-                .placeholder(R.drawable.ic_launcher_background)
-                .error(R.drawable.ic_launcher_background);
-
-        RequestManager requestManager = Glide.with(this);
-
-        return requestManager;
+        return GlideSingleton.getInstance(this.getContext()).getRequestManager();
     }
 
     private void displaySearchCategories(){
@@ -70,14 +65,20 @@ public class MonkeyListFragment extends Fragment implements OnMonkeyListener {
     }
 
     @Override
-    public void onMonkeyClick(int position) {
+    public void onMonkeyClick(int position, ImageView sharedImageView) {
         Bundle bundle = new Bundle();
         bundle.putString("monkey_name", mMonkeyRecyclerAdapter.getSelectedMonkey(position).getMonkeyName());
-        //bundle.putString("monkey_name", "YEETISH");
 
         getParentFragmentManager().beginTransaction()
                 .setReorderingAllowed(true)
-                .add(R.id.FragmentContainer, MonkeyDetailFragment.class, bundle)
+                .addSharedElement(sharedImageView, ViewCompat.getTransitionName(sharedImageView))
+//                .setCustomAnimations(
+//                        R.anim.slide_in,
+//                        R.anim.fade_out,
+//                        R.anim.fade_in,
+//                        R.anim.slide_out
+//                )
+                .replace(R.id.FragmentContainer, MonkeyDetailFragment.class, bundle)
                 .addToBackStack("SecondFragment")
                 .commit();
     }

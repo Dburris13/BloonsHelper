@@ -16,6 +16,14 @@
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_out.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\anim\\slide_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\font_quartzo_bold.ttf.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\font\\quartzo_bold.ttf"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_monkey_list_fragment.xml.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\layout\\monkey_list_fragment.xml"
     },
@@ -24,20 +32,36 @@
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_monkey_detail_fragment.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\layout\\monkey_detail_fragment.xml"
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_blue.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable\\gradient_blue.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_monkey_detail_fragment.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\layout\\monkey_detail_fragment.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_path500.png.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable-v24\\path500.png"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_monkey_list.xml.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\layout\\activity_monkey_list.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_modeselectnormalbtn.png.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable-v24\\modeselectnormalbtn.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_modeselecteasybtn.png.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable-v24\\modeselecteasybtn.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
@@ -52,6 +76,10 @@
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_green.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable\\gradient_green.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
@@ -62,6 +90,18 @@
     {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_temp.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\layout\\temp.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\font_bungee_regular.ttf.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\font\\bungee_regular.ttf"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_orange.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable\\gradient_orange.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
@@ -76,28 +116,68 @@
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_monkey_picture.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\layout\\layout_monkey_picture.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_monkey_picture.xml.flat",
-        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\layout\\layout_monkey_picture.xml"
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\anim_slide_in.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\anim\\slide_in.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_upgrade_row.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\layout\\upgrade_row.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_in.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_purple.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable\\gradient_purple.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_yellow.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable\\gradient_yellow.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_modeselecthardbtn.png.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable-v24\\modeselecthardbtn.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_myshapes.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable\\myshapes.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_modeselectimpoppablebtn.png.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable-v24\\modeselectimpoppablebtn.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable_myredshape.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\drawable\\myredshape.xml"
+    },
+    {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\anim_fade_out.xml.flat",
+        "source": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\src\\main\\res\\anim\\fade_out.xml"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\BloonsHelper\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_monkey_details.xml.flat",

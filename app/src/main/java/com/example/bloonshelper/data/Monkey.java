@@ -1,6 +1,6 @@
 package com.example.bloonshelper.data;
 
-import androidx.room.ColumnInfo;
+import androidx.room.Embedded;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -8,46 +8,24 @@ import androidx.room.PrimaryKey;
 public class Monkey {
 
     @PrimaryKey(autoGenerate = true)
-    public int uid;
-
-    @ColumnInfo(name = "monkey_name")
-    public String monkeyName;
-
-    @ColumnInfo(name = "monkey_class")
-    public String monkeyClass;
-
-    @ColumnInfo(name = "monkey_range")
-    public int monkeyRange;
-
-    @ColumnInfo(name = "monkey_pierce")
-    public int monkeyPierce;
-
-    @ColumnInfo(name = "monkey_damage")
-    public int monkeyDamage;
-
-    @ColumnInfo(name = "monkey_camo_detect")
-    public boolean monkeyCamoDetect;
-
-    @ColumnInfo(name = "monkey_lead_pierce")
-    public boolean monkeyLeadPierce;
-
-    @ColumnInfo(name = "monkey_footprint")
-    public int monkeyFootprint;
-
-    @ColumnInfo(name = "monkey_hotkey")
-    public char monkeyHotkey;
-
-    @ColumnInfo(name = "monkey_special_ability")
-    public String monkeySpecialAbility;
-
-    @ColumnInfo(name = "monkey_art")
-    public String monkeyArt;
-
-    @ColumnInfo(name = "monkey_icon")
-    public String monkeyIcon;
-
-    @ColumnInfo(name = "monkey_sell_amount")
-    public int monkeySellAmount;
+    private int uid;
+    private String monkeyName;
+    private String monkeyClass;
+    private int monkeyRange;
+    private int monkeyPierce;
+    private int monkeyDamage;
+    private boolean monkeyCamoDetect;
+    private boolean monkeyLeadPierce;
+    private int monkeyFootprint;
+    private char monkeyHotkey;
+    private String monkeySpecialAbility;
+    private String monkeyArt;
+    private String monkeyIcon;
+    @Embedded(prefix = "buy")
+    private Cost monkeyCost;
+    private String path1Upgrade;
+    private String path2Upgrade;
+    private String path3Upgrade;
 
     public Monkey() {
         this.monkeyName = "Base_Monkey";
@@ -62,11 +40,14 @@ public class Monkey {
         this.monkeySpecialAbility = "none";
         this.monkeyArt = "none";
         this.monkeyIcon = "none";
-        this.monkeySellAmount = 0;
+        this.monkeyCost = new Cost(100, 200, 300, 400);
+        this.path1Upgrade = "none";
+        this.path2Upgrade = "none";
+        this.path3Upgrade = "none";
     }
 
     public int getColumnCount() {
-        return 13;
+        return 14;
     }
 
     public String getColumnHeader(int i) {
@@ -83,12 +64,13 @@ public class Monkey {
             case 9: return "Monkey Special Ability";
             case 10: return "Monkey Art";
             case 11: return "Monkey Icon";
-            case 12: return "Monkey Sell Amount";
+            case 12: return "Monkey Buy Amount";
+            case 13: return "Monkey Sell Amount";
             default: return "null";
         }
     }
 
-    public String getContent(int i) {
+    public String getContent(int i, MonkeysData.Difficulty difficulty) {
         switch(i) {
             case 0: return monkeyName;
             case 1: return monkeyClass;
@@ -102,7 +84,8 @@ public class Monkey {
             case 9: return monkeySpecialAbility;
             case 10: return monkeyArt;
             case 11: return monkeyIcon;
-            case 12: return String.valueOf(monkeySellAmount);
+            case 12: return String.valueOf(monkeyCost.returnCostViaDifficulty(difficulty));
+            case 13: return String.valueOf(monkeyCost.returnCostViaDifficulty(difficulty)*.75);
             default: return "null";
         }
     }
@@ -143,7 +126,95 @@ public class Monkey {
         return monkeyDamage;
     }
 
-    public Monkey(String monkeyName, String monkeyClass, int monkeyRange, int monkeyPierce, int monkeyDamage, boolean monkeyCamoDetect, boolean monkeyLeadPierce, int monkeyFootprint, char monkeyHotkey, String monkeySpecialAbility, String monkeyArt, String monkeyIcon, int monkeySellAmount) {
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public void setMonkeyRange(int monkeyRange) {
+        this.monkeyRange = monkeyRange;
+    }
+
+    public void setMonkeyPierce(int monkeyPierce) {
+        this.monkeyPierce = monkeyPierce;
+    }
+
+    public void setMonkeyDamage(int monkeyDamage) {
+        this.monkeyDamage = monkeyDamage;
+    }
+
+    public boolean isMonkeyCamoDetect() {
+        return monkeyCamoDetect;
+    }
+
+    public void setMonkeyCamoDetect(boolean monkeyCamoDetect) {
+        this.monkeyCamoDetect = monkeyCamoDetect;
+    }
+
+    public boolean isMonkeyLeadPierce() {
+        return monkeyLeadPierce;
+    }
+
+    public void setMonkeyLeadPierce(boolean monkeyLeadPierce) {
+        this.monkeyLeadPierce = monkeyLeadPierce;
+    }
+
+    public int getMonkeyFootprint() {
+        return monkeyFootprint;
+    }
+
+    public void setMonkeyFootprint(int monkeyFootprint) {
+        this.monkeyFootprint = monkeyFootprint;
+    }
+
+    public char getMonkeyHotkey() {
+        return monkeyHotkey;
+    }
+
+    public void setMonkeyHotkey(char monkeyHotkey) {
+        this.monkeyHotkey = monkeyHotkey;
+    }
+
+    public String getMonkeySpecialAbility() {
+        return monkeySpecialAbility;
+    }
+
+    public void setMonkeySpecialAbility(String monkeySpecialAbility) {
+        this.monkeySpecialAbility = monkeySpecialAbility;
+    }
+
+    public String getMonkeyIcon() {
+        return monkeyIcon;
+    }
+
+    public void setMonkeyIcon(String monkeyIcon) {
+        this.monkeyIcon = monkeyIcon;
+    }
+
+    public Cost getMonkeyCost() {
+        return monkeyCost;
+    }
+
+    public void setMonkeyCost(Cost monkeyCost) {
+        this.monkeyCost = monkeyCost;
+    }
+
+    public void setPath1Upgrade(String path1Upgrade) {
+        this.path1Upgrade = path1Upgrade;
+    }
+
+    public void setPath2Upgrade(String path2Upgrade) {
+        this.path2Upgrade = path2Upgrade;
+    }
+
+    public void setPath3Upgrade(String path3Upgrade) {
+        this.path3Upgrade = path3Upgrade;
+    }
+
+    public Monkey(String monkeyName, String monkeyClass, int monkeyRange, int monkeyPierce, int monkeyDamage, boolean monkeyCamoDetect, boolean monkeyLeadPierce, int monkeyFootprint, char monkeyHotkey, String monkeySpecialAbility, String monkeyArt, String monkeyIcon) {
 //        this.uid = uid;
         this.monkeyName = monkeyName;
         this.monkeyClass = monkeyClass;
@@ -157,8 +228,51 @@ public class Monkey {
         this.monkeySpecialAbility = monkeySpecialAbility;
         this.monkeyArt = monkeyArt;
         this.monkeyIcon = monkeyIcon;
-        this.monkeySellAmount = monkeySellAmount;
+        this.monkeyCost = new Cost(100, 200, 300, 400);
+        this.path1Upgrade = "Bigger Bombs";
+        this.path2Upgrade = "Faster Reload";
+        this.path3Upgrade = "Extra Range";
     }
 
 
+
+    public Monkey(String monkeyName, String monkeyClass, int monkeyRange, int monkeyPierce, int monkeyDamage, boolean monkeyCamoDetect, boolean monkeyLeadPierce, int monkeyFootprint, char monkeyHotkey, String monkeySpecialAbility, String monkeyArt, String monkeyIcon, Cost monkeyCost, String path1Upgrade, String path2Upgrade, String path3Upgrade) {
+        this.monkeyName = monkeyName;
+        this.monkeyClass = monkeyClass;
+        this.monkeyRange = monkeyRange;
+        this.monkeyPierce = monkeyPierce;
+        this.monkeyDamage = monkeyDamage;
+        this.monkeyCamoDetect = monkeyCamoDetect;
+        this.monkeyLeadPierce = monkeyLeadPierce;
+        this.monkeyFootprint = monkeyFootprint;
+        this.monkeyHotkey = monkeyHotkey;
+        this.monkeySpecialAbility = monkeySpecialAbility;
+        this.monkeyArt = monkeyArt;
+        this.monkeyIcon = monkeyIcon;
+        this.monkeyCost = monkeyCost;
+        this.path1Upgrade = path1Upgrade;
+        this.path2Upgrade = path2Upgrade;
+        this.path3Upgrade = path3Upgrade;
+    }
+
+    public String getUpgradePath(int tier) {
+        switch (tier) {
+            case 1: return path1Upgrade;
+            case 2: return path2Upgrade;
+            case 3: return path3Upgrade;
+            default: return "NULL";
+        }
+    }
+
+    public String getPath1Upgrade() {
+        return path1Upgrade;
+    }
+
+    public String getPath2Upgrade() {
+        return path2Upgrade;
+    }
+
+    public String getPath3Upgrade() {
+        return path3Upgrade;
+    }
 }

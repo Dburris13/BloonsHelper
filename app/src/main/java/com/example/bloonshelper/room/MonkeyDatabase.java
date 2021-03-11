@@ -4,14 +4,13 @@ import android.content.Context;
 import android.util.Log;
 
 import com.example.bloonshelper.data.Monkey;
+import com.example.bloonshelper.data.Upgrade;
 
-import androidx.annotation.NonNull;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-import androidx.sqlite.db.SupportSQLiteDatabase;
 
-@Database(entities = {Monkey.class}, version = 1, exportSchema = true)
+@Database(entities = {Monkey.class, Upgrade.class}, version = 8, exportSchema = true)
 public abstract class MonkeyDatabase extends RoomDatabase {
 
     private static final String TAG = "MonkeyDatabase";
@@ -27,7 +26,7 @@ public abstract class MonkeyDatabase extends RoomDatabase {
                             context.getApplicationContext(),
                             MonkeyDatabase.class,
                             DATABASE_NAME
-                    ).createFromAsset("monkeys_db.db").allowMainThreadQueries().build();
+                    ).createFromAsset("monkeys_db.db").allowMainThreadQueries().fallbackToDestructiveMigration().build();
                     Log.d(TAG, "getDatabase: Creating Database from Asset. Instance: " + instance.isOpen());
                 }
             }
@@ -36,21 +35,4 @@ public abstract class MonkeyDatabase extends RoomDatabase {
     }
 
     public abstract MonkeyDao getMonkeyDao();
-
-    private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
-        @Override
-        public void onCreate(@NonNull SupportSQLiteDatabase db) {
-            super.onCreate(db);
-
-            AppExecutors.getsInstance().diskIO().execute(new Runnable() {
-                @Override
-                public void run() {
-                    instance.getMonkeyDao().deleteAll();
-//                    instance.getMonkeyDao().insertAll(MonkeysData.populateMonkeysData());
-                }
-            });
-        }
-    };
-
-//    public abstract MonkeyUpgradeDao getMonkeyUpgradeDao();
 }

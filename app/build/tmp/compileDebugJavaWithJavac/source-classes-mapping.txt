@@ -2,40 +2,57 @@ com/example/bloonshelper/adapters/MonkeyArtViewHolder.java
  com.example.bloonshelper.adapters.MonkeyArtViewHolder
 com/example/bloonshelper/fragments/MonkeyDetailFragment.java
  com.example.bloonshelper.fragments.MonkeyDetailFragment
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$1
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$10
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$11
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$2
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$3
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$4
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$5
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$6
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$7
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$8
+ com.example.bloonshelper.fragments.MonkeyDetailFragment$9
 com/example/bloonshelper/room/MonkeyDao.java
  com.example.bloonshelper.room.MonkeyDao
-com/example/bloonshelper/data/MonkeyCost.java
- com.example.bloonshelper.data.MonkeyCost
 com/example/bloonshelper/data/Monkey.java
  com.example.bloonshelper.data.Monkey
 com/example/bloonshelper/room/MonkeyDatabase.java
  com.example.bloonshelper.room.MonkeyDatabase
- com.example.bloonshelper.room.MonkeyDatabase$1
- com.example.bloonshelper.room.MonkeyDatabase$1$1
 com/example/bloonshelper/activity/MonkeyListActivity.java
  com.example.bloonshelper.activity.MonkeyListActivity
-com/example/bloonshelper/room/AppExecutors.java
- com.example.bloonshelper.room.AppExecutors
- com.example.bloonshelper.room.AppExecutors$1
- com.example.bloonshelper.room.AppExecutors$MainThreadExecutor
+com/example/bloonshelper/singleton/AppExecutors.java
+ com.example.bloonshelper.singleton.AppExecutors
+ com.example.bloonshelper.singleton.AppExecutors$1
+ com.example.bloonshelper.singleton.AppExecutors$MainThreadExecutor
+com/example/bloonshelper/data/Upgrade.java
+ com.example.bloonshelper.data.Upgrade
 com/example/bloonshelper/room/MonkeyRepository.java
  com.example.bloonshelper.room.MonkeyRepository
+ com.example.bloonshelper.room.MonkeyRepository$1
+ com.example.bloonshelper.room.MonkeyRepository$2
+ com.example.bloonshelper.room.MonkeyRepository$3
+com/example/bloonshelper/singleton/GlideSingleton.java
+ com.example.bloonshelper.singleton.GlideSingleton
 com/example/bloonshelper/viewmodel/MonkeyFragmentListViewModel.java
  com.example.bloonshelper.viewmodel.MonkeyFragmentListViewModel
 com/example/bloonshelper/fragments/MonkeyListFragment.java
  com.example.bloonshelper.fragments.MonkeyListFragment
+com/example/bloonshelper/data/TierTracker.java
+ com.example.bloonshelper.data.TierTracker
 com/example/bloonshelper/adapters/MonkeyRecyclerAdapter.java
  com.example.bloonshelper.adapters.MonkeyRecyclerAdapter
-com/example/bloonshelper/data/MonkeyUpgrade.java
- com.example.bloonshelper.data.MonkeyUpgrade
- com.example.bloonshelper.data.MonkeyUpgrade$Tier
 com/example/bloonshelper/adapters/OnMonkeyListener.java
  com.example.bloonshelper.adapters.OnMonkeyListener
 com/example/bloonshelper/data/MonkeysData.java
  com.example.bloonshelper.data.MonkeysData
+ com.example.bloonshelper.data.MonkeysData$Difficulty
 com/example/bloonshelper/viewmodel/MonkeyListViewModel.java
  com.example.bloonshelper.viewmodel.MonkeyListViewModel
 com/example/bloonshelper/BuildConfig.java
  com.example.bloonshelper.BuildConfig
+com/example/bloonshelper/data/Cost.java
+ com.example.bloonshelper.data.Cost
+ com.example.bloonshelper.data.Cost$1
 com/example/bloonshelper/viewmodel/MonkeyDetailViewModel.java
  com.example.bloonshelper.viewmodel.MonkeyDetailViewModel

@@ -2,11 +2,11 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "1bb835284fb20d5e7e892dce1101a261",
+    "identityHash": "8c431ee5963dbcd7335416fccb89d8a5",
     "entities": [
       {
         "tableName": "monkey_base",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `monkey_name` TEXT, `monkey_class` TEXT, `monkey_range` INTEGER NOT NULL, `monkey_pierce` INTEGER NOT NULL, `monkey_damage` INTEGER NOT NULL, `monkey_camo_detect` INTEGER NOT NULL, `monkey_lead_pierce` INTEGER NOT NULL, `monkey_footprint` INTEGER NOT NULL, `monkey_hotkey` INTEGER NOT NULL, `monkey_special_ability` TEXT, `monkey_art` TEXT, `monkey_icon` TEXT, `monkey_sell_amount` INTEGER NOT NULL)",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `monkeyName` TEXT, `monkeyClass` TEXT, `monkeyRange` INTEGER NOT NULL, `monkeyPierce` INTEGER NOT NULL, `monkeyDamage` INTEGER NOT NULL, `monkeyCamoDetect` INTEGER NOT NULL, `monkeyLeadPierce` INTEGER NOT NULL, `monkeyFootprint` INTEGER NOT NULL, `monkeyHotkey` INTEGER NOT NULL, `monkeySpecialAbility` TEXT, `monkeyArt` TEXT, `monkeyIcon` TEXT, `monkeySellAmount` INTEGER NOT NULL, `easy` INTEGER, `medium` INTEGER, `hard` INTEGER, `impoppable` INTEGER)",
         "fields": [
           {
             "fieldPath": "uid",
@@ -16,81 +16,105 @@
           },
           {
             "fieldPath": "monkeyName",
-            "columnName": "monkey_name",
+            "columnName": "monkeyName",
             "affinity": "TEXT",
             "notNull": false
           },
           {
             "fieldPath": "monkeyClass",
-            "columnName": "monkey_class",
+            "columnName": "monkeyClass",
             "affinity": "TEXT",
             "notNull": false
           },
           {
             "fieldPath": "monkeyRange",
-            "columnName": "monkey_range",
+            "columnName": "monkeyRange",
             "affinity": "INTEGER",
             "notNull": true
           },
           {
             "fieldPath": "monkeyPierce",
-            "columnName": "monkey_pierce",
+            "columnName": "monkeyPierce",
             "affinity": "INTEGER",
             "notNull": true
           },
           {
             "fieldPath": "monkeyDamage",
-            "columnName": "monkey_damage",
+            "columnName": "monkeyDamage",
             "affinity": "INTEGER",
             "notNull": true
           },
           {
             "fieldPath": "monkeyCamoDetect",
-            "columnName": "monkey_camo_detect",
+            "columnName": "monkeyCamoDetect",
             "affinity": "INTEGER",
             "notNull": true
           },
           {
             "fieldPath": "monkeyLeadPierce",
-            "columnName": "monkey_lead_pierce",
+            "columnName": "monkeyLeadPierce",
             "affinity": "INTEGER",
             "notNull": true
           },
           {
             "fieldPath": "monkeyFootprint",
-            "columnName": "monkey_footprint",
+            "columnName": "monkeyFootprint",
             "affinity": "INTEGER",
             "notNull": true
           },
           {
             "fieldPath": "monkeyHotkey",
-            "columnName": "monkey_hotkey",
+            "columnName": "monkeyHotkey",
             "affinity": "INTEGER",
             "notNull": true
           },
           {
             "fieldPath": "monkeySpecialAbility",
-            "columnName": "monkey_special_ability",
+            "columnName": "monkeySpecialAbility",
             "affinity": "TEXT",
             "notNull": false
           },
           {
             "fieldPath": "monkeyArt",
-            "columnName": "monkey_art",
+            "columnName": "monkeyArt",
             "affinity": "TEXT",
             "notNull": false
           },
           {
             "fieldPath": "monkeyIcon",
-            "columnName": "monkey_icon",
+            "columnName": "monkeyIcon",
             "affinity": "TEXT",
             "notNull": false
           },
           {
             "fieldPath": "monkeySellAmount",
-            "columnName": "monkey_sell_amount",
+            "columnName": "monkeySellAmount",
             "affinity": "INTEGER",
             "notNull": true
+          },
+          {
+            "fieldPath": "monkeyCost.easy",
+            "columnName": "easy",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monkeyCost.medium",
+            "columnName": "medium",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monkeyCost.hard",
+            "columnName": "hard",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monkeyCost.impoppable",
+            "columnName": "impoppable",
+            "affinity": "INTEGER",
+            "notNull": false
           }
         ],
         "primaryKey": {
@@ -106,7 +130,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1bb835284fb20d5e7e892dce1101a261')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8c431ee5963dbcd7335416fccb89d8a5')"
     ]
   }
 }

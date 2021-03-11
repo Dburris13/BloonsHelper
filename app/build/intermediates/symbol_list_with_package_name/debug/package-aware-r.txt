@@ -27,6 +27,8 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
+anim fade_out
 anim fragment_close_enter
 anim fragment_close_exit
 anim fragment_fade_enter
@@ -37,6 +39,8 @@ anim fragment_open_exit
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim slide_in
+anim slide_out
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -930,6 +934,8 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue_gradient_finish
+color blue_gradient_start
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -938,6 +944,7 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color cancel_red
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
@@ -989,6 +996,9 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green_gradient_finish
+color green_gradient_start
+color hero_yellow
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color magic_purple
@@ -1075,6 +1085,8 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color orange_gradient_finish
+color orange_gradient_start
 color primary_blue
 color primary_dark_material_dark
 color primary_dark_material_light
@@ -1087,6 +1099,8 @@ color primary_text_disabled_material_light
 color purple_200
 color purple_500
 color purple_700
+color purple_gradient_finish
+color purple_gradient_start
 color radiobutton_themeable_attribute_color
 color ripple_material_dark
 color ripple_material_light
@@ -1107,7 +1121,10 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color upgrade_button_green
 color white
+color yellow_gradient_finish
+color yellow_gradient_start
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1558,6 +1575,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gradient_blue
+drawable gradient_green
+drawable gradient_orange
+drawable gradient_purple
+drawable gradient_yellow
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_checked_circle
@@ -1571,6 +1593,10 @@ drawable material_ic_keyboard_arrow_left_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable modeselecteasybtn
+drawable modeselecthardbtn
+drawable modeselectimpoppablebtn
+drawable modeselectnormalbtn
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1580,6 +1606,8 @@ drawable mtrl_ic_error
 drawable mtrl_popupmenu_background
 drawable mtrl_popupmenu_background_dark
 drawable mtrl_tabs_default_indicator
+drawable myredshape
+drawable myshapes
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1593,10 +1621,13 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable path500
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable white_background
+font bungee_regular
+font quartzo_bold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1612,6 +1643,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id UpgradeContents
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1673,6 +1705,7 @@ id all
 id always
 id animateToEnd
 id animateToStart
+id art
 id asConfigured
 id async
 id auto
@@ -1729,11 +1762,13 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id difficultySelect
 id dimensions
 id direct
 id disableHome
 id disablePostScroll
 id disableScroll
+id downgradeButton
 id dragDown
 id dragEnd
 id dragLeft
@@ -1765,7 +1800,6 @@ id floating
 id fmainRecyclerView
 id forever
 id fragmentMonkeyIcon
-id fragmentMonkeyIconCardView
 id fragmentScrollView
 id fragment_container_view_tag
 id ghost_view
@@ -1964,6 +1998,11 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toggleButton1
+id toggleButton2
+id toggleButton3
+id toggleButton4
+id toggleButton5
 id top
 id topPanel
 id touch_outside
@@ -1975,10 +2014,17 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtOwned
+id txtPrice
 id unchecked
 id uniform
 id unlabeled
 id up
+id upgradeButton
+id upgradeDescription
+id upgradeRow1
+id upgradeRow2
+id upgradeRow3
 id useLogo
 id view_offset_helper
 id visible
@@ -2116,6 +2162,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout temp
 layout test_action_chip
 layout test_chip_zero_corner_radius
 layout test_design_checkbox
@@ -2130,6 +2177,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout upgrade_row
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
